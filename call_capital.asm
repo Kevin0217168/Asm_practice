@@ -41,7 +41,7 @@ capital:
         and al, 11011111b   ; 转大写
         mov [bx + si], al
         inc si              ; 下一个数据
-    loop s
+    jmp short s             ; 死循环，回到初始化
 
     ok:
         ; 恢复数据，出栈
