@@ -58,6 +58,7 @@ main:
     mov ds, ax
     mov ax, stack
     mov ss, ax
+    mov sp, 20
 
     mov bx, 0           ; 设置开始行数
     mov cx, 5           ; 设置循环次数
